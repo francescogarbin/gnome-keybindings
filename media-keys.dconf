@@ -1,0 +1,23 @@
+[/]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/']
+help=@as []
+home=['<Super>f']
+logout=@as []
+rotate-video-lock-static=['<Super>o', 'XF86RotationLockToggle']
+screensaver=@as []
+www=@as []
+
+[custom-keybindings/custom0]
+binding='<Super>c'
+command='gnome-calendar'
+name='Launch Calendar'
+
+[custom-keybindings/custom1]
+binding='<Super>b'
+command='firefox'
+name='Launch Browser'
+
+[custom-keybindings/custom2]
+binding='<Super>Return'
+command='ptyxis --new-window '
+name='Launch Terminal'
