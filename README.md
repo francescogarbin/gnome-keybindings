@@ -20,10 +20,12 @@ someone possibly benefiting from it.
 
 ### Preconditions
 Install Gnome Extensions Manager
+
 Install extention Tiling Shell (beautiful work!)
 
 ### Export all Gnome keybindings from one PC
 dconf dump /org/gnome/desktop/wm/keybindings/ > gnome-keybindings.dconf
+
 dconf dump /org/gnome/settings-daemon/plugins/media-keys/ > media-keys.dconf
 
 ### Export all Tiling Shell keybindings from one PC
@@ -31,6 +33,7 @@ Use the extension floating window, export button.
 
 ### Import all keybindings on the other PC
 dconf load /org/gnome/desktop/wm/keybindings/ < gnome-keybindings.dconf
+
 dconf load /org/gnome/settings-daemon/plugins/media-keys/ < media-keys.dconf
 
 ### Import Tiling Shell keybindings on the other PC
