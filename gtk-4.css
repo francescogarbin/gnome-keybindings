@@ -1,0 +1,102 @@
+/* ===================================
+   GNOME HACKER GREEN THEME 💚
+   Dark background + Green accents
+   ================================== */
+
+:root {
+  --color-accent-bg: #587f94;
+  --color-accent-fg: #ebebeb;
+  --color-title: #587f94;
+  --color-accent-bd: #404040;
+  --backdrop-color: #373e43;
+  --standout_color: #587f94;
+  --radius-tight: 4px;
+  --radius-relaxed: 10px;
+}
+
+decoration {
+  border: 1px solid var(--standout_color);
+  background: var(--standout_color);
+}
+decoration:backdrop {
+  border: 1px solid var(--backdrop_color);
+  background: var(--backdrop_color);
+}
+
+headerbar,
+titlebar,
+headerbar.titlebar {
+  min-height: 22px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #2b2b2b;  /* Darkula */
+  color: var("--color-title"); /* was #a9b7c6; */
+  border-bottom: 1px solid #3c3f41;
+  box-shadow: none;
+  border-radius: var(--radius-tight);
+}
+
+headerbar.titlebar:backdrop {
+  background: var(--backdrop-color);
+}
+
+window {
+    border-radius: var(--radius-tight);
+}
+
+.titlebar,
+headerbar {
+    border-radius: var(--radius-tight);
+}
+
+.dialog,
+.popup {
+    border-radius: var(--radius-tight);
+}
+
+headerbar .title,
+.titlebar .title {
+    color: var(--color-title);
+    font-weight: bold;
+    border-radius: var(--radius-tight);
+}
+
+headerbar,
+titlebar,
+headerbar.titlebar,
+headerbar button.titlebutton,
+.titlebar button.titlebutton {
+    min-height: 22px;
+    min-width: 22px;
+    padding: 2px;
+    border-radius: var(--radius-tight);
+}
+
+button {
+  border-radius: var(--radius-tight);
+  min-height: 22px;
+  min-width: 22px;
+}
+
+headerbar button,
+.titlebar button {
+  border-radius: var(--radius-tight);
+}
+
+button.suggested-action,
+button.destructive-action {
+  border-radius: var(--radius-tight);
+}
+
+switch {
+  border-radius: var(--radius-relaxed);;
+}
+
+entry {
+  border-radius: var(--radius-tight);
+}
+
+combobox button {
+  border-radius: var(--radius-tight);
+}
+
