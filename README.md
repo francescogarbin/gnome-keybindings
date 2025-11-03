@@ -44,3 +44,6 @@ cp gtk-3.css ~/.config/gtk-3/gtk.css
 
 cp gtk-4.css ~/.config/gtk-4/gtk.css
 
+I've also added a CSS styling file for GTK 4 named <i>Hacker Green</i> for a
+boxy interpretation of the GTK UI great for dark themes and fans of green
+terminal-like accents.

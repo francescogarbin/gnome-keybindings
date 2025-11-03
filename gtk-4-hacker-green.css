@@ -1,0 +1,409 @@
+/* ===================================
+   GNOME HACKER GREEN THEME 💚
+   DEFINITIVO - Con border-radius fix
+   Dark background + Green accents
+   ================================== */
+
+/* ===================================
+   PARTE 1: BORDER-RADIUS ZERO
+   ================================== */
+
+/* Finestre - 2px radius (non troppo boxy!) */
+window,
+window.background,
+window.csd,
+window.solid-csd,
+.background,
+dialog,
+dialog.background,
+dialog.csd {
+    border-radius: 2px;
+    background-color: #1e1e1e;
+    color: #a9b7c6;
+}
+
+/* Headerbar - 2px radius top per uniformità */
+headerbar,
+headerbar.default-decoration,
+headerbar.titlebar,
+.titlebar,
+.titlebar.default-decoration,
+window > headerbar,
+window.csd > headerbar,
+dialog > headerbar {
+    border-radius: 2px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    min-height: 36px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: #2b2b2b;
+    color: #a9b7c6;
+    border-bottom: 1px solid #3c3f41;
+    box-shadow: none;
+}
+
+/* ===================================
+   PARTE 2: ELEMENTI CON RADIUS 2PX
+   ================================== */
+
+/* Bottoni */
+button,
+headerbar button,
+.titlebar button,
+toolbar button,
+popover button,
+menu button,
+.menu button,
+dialog button,
+notebook button {
+    border-radius: 2px;
+    min-height: 28px;
+    background-color: #313335;
+    color: #a9b7c6;
+    border: 1px solid #3c3f41;
+}
+
+button:hover {
+    background-color: #3c3f41;
+    border-color: #00ff00;
+}
+
+button:active,
+button:checked {
+    background-color: #00ff00;
+    color: #1e1e1e;
+    border-color: #00ff00;
+}
+
+/* Titlebuttons compatti */
+headerbar button.titlebutton,
+headerbar button.image-button,
+.titlebar button.titlebutton,
+.titlebar button.image-button {
+    border-radius: 2px;
+    min-height: 24px;
+    min-width: 24px;
+    padding: 2px;
+    background-color: transparent;
+}
+
+headerbar button:hover,
+.titlebar button:hover {
+    background-color: #00ff00;
+    color: #1e1e1e;
+}
+
+/* Entry fields */
+entry,
+searchbar entry,
+headerbar entry,
+toolbar entry {
+    border-radius: 2px;
+    background-color: #313335;
+    color: #a9b7c6;
+    border: 1px solid #3c3f41;
+}
+
+entry:focus {
+    border-color: #00ff00;
+    box-shadow: 0 0 3px #00ff00;
+}
+
+/* Menu e Popover */
+menu,
+.menu,
+.context-menu,
+popover,
+popover.background,
+popover > contents {
+    border-radius: 2px;
+    background-color: #313335;
+    color: #a9b7c6;
+    border: 1px solid #3c3f41;
+}
+
+menuitem:hover,
+.menuitem:hover {
+    background-color: #00ff00;
+    color: #1e1e1e;
+    border-radius: 2px;
+}
+
+/* Switch */
+switch,
+switch slider {
+    border-radius: 2px;
+    background-color: #313335;
+    border: 1px solid #3c3f41;
+}
+
+switch:checked {
+    background-color: #00ff00;
+}
+
+switch slider {
+    background-color: #a9b7c6;
+}
+
+switch:checked slider {
+    background-color: #1e1e1e;
+}
+
+/* Checkbox e Radio */
+check,
+radio {
+    border-radius: 2px;
+    background-color: #313335;
+    border: 1px solid #3c3f41;
+}
+
+check:checked,
+radio:checked {
+    background-color: #00ff00;
+    border-color: #00ff00;
+    color: #1e1e1e;
+}
+
+/* Notebook tabs */
+notebook,
+notebook > header,
+notebook > header > tabs > tab {
+    border-radius: 2px;
+}
+
+notebook > header {
+    background-color: #2b2b2b;
+}
+
+notebook > header > tabs > tab {
+    background-color: #313335;
+    color: #a9b7c6;
+}
+
+notebook > header > tabs > tab:checked {
+    background-color: #00ff00;
+    color: #1e1e1e;
+}
+
+/* Scrollbar */
+scrollbar,
+scrollbar slider {
+    border-radius: 2px;
+}
+
+scrollbar {
+    background-color: #2b2b2b;
+}
+
+scrollbar slider {
+    background-color: #3c3f41;
+}
+
+scrollbar slider:hover {
+    background-color: #4e5254;
+}
+
+/* Tooltip */
+tooltip,
+tooltip.background {
+    border-radius: 2px;
+    background-color: #313335;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+}
+
+/* Progress bar */
+progressbar progress {
+    background-color: #00ff00;
+    border-radius: 2px;
+}
+
+progressbar trough {
+    background-color: #313335;
+    border-radius: 2px;
+}
+
+/* Scale (slider) */
+scale slider,
+scale trough,
+scale fill {
+    border-radius: 2px;
+}
+
+/* Calendar */
+calendar,
+calendar:selected {
+    border-radius: 2px;
+}
+
+calendar:selected {
+    background-color: #5c5c5c;
+    color: #ffffff;
+}
+
+/* ===================================
+   PARTE 3: VIEWS E CONTENUTI
+   ================================== */
+
+.view,
+textview text,
+textview,
+scrolledwindow,
+viewport {
+    background-color: #2b2b2b;
+    color: #a9b7c6;
+    border-radius: 0px;
+}
+
+.sidebar {
+    background-color: #252525;
+    color: #a9b7c6;
+    border-radius: 0px;
+}
+
+/* ===================================
+   PARTE 4: SELEZIONI E LINKS
+   ================================== */
+
+selection,
+*:selected,
+.view:selected,
+.view selection,
+treeview:selected {
+    background-color: #5c5c5c;
+    color: #ffffff;
+}
+
+link,
+*:link {
+    color: #00ff00;
+}
+
+link:hover {
+    color: #00cc00;
+}
+
+/* ===================================
+   PARTE 5: BOTTONI SUGGERITI
+   ================================== */
+
+button.suggested-action {
+    background-color: #00cc00;
+    color: #1e1e1e;
+    border-radius: 2px;
+}
+
+button.suggested-action:hover {
+    background-color: #00ff00;
+}
+
+button.destructive-action {
+    background-color: #ff4444;
+    color: #ffffff;
+    border-radius: 2px;
+}
+
+/* ===================================
+   PARTE 6: GNOME FILES / NAUTILUS
+   ================================== */
+
+.nautilus-window,
+.nautilus-window > box,
+.nautilus-window headerbar {
+    border-radius: 2px;
+}
+
+.nautilus-window .sidebar row {
+    color: #a9b7c6;
+}
+
+.nautilus-window .sidebar row:selected {
+    background-color: #5c5c5c;
+    color: #ffffff;
+}
+
+.nautilus-window .path-bar button {
+    background-color: #313335;
+    color: #00ff00;
+    border-radius: 2px;
+}
+
+.nautilus-window .path-bar button:hover {
+    background-color: #00ff00;
+    color: #1e1e1e;
+}
+
+.nautilus-window searchbar {
+    background-color: #2b2b2b;
+}
+
+/* ===================================
+   PARTE 7: LISTS E TREEVIEW
+   ================================== */
+
+treeview,
+list,
+list row,
+listview,
+columnview {
+    background-color: #2b2b2b;
+    color: #a9b7c6;
+    border-radius: 0px;
+}
+
+treeview header button,
+columnview header button {
+    background-color: #313335;
+    color: #a9b7c6;
+    border-radius: 2px;
+}
+
+/* ===================================
+   PARTE 8: TITOLI HEADERBAR
+   ================================== */
+
+headerbar .title,
+.titlebar .title {
+    font-size: 0.9em;
+    color: #00ff00;
+    font-weight: bold;
+}
+
+headerbar .subtitle,
+.titlebar .subtitle {
+    font-size: 0.8em;
+    color: #a9b7c6;
+}
+
+/* ===================================
+   PARTE 9: GNOME SPECIFIC APPS
+   ================================== */
+
+/* Gnome Terminal */
+.terminal-window,
+.terminal-window headerbar {
+    border-radius: 2px;
+}
+
+/* Gnome Text Editor */
+.text-editor,
+.text-editor headerbar {
+    border-radius: 2px;
+}
+
+/* Gnome Settings */
+.settings,
+.settings headerbar {
+    border-radius: 2px;
+}
+
+/* Gnome Files */
+.nautilus-window,
+.nautilus-window headerbar {
+    border-radius: 2px;
+}
+
+/* ===================================
+   FINE TEMA HACKER GREEN
+   ================================== */
